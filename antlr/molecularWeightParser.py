@@ -1,17 +1,14 @@
 # Generated from java-escape by ANTLR 4.5
 # encoding: utf-8
 from __future__ import print_function
-from io import StringIO
-
 from antlr4 import *
-
+from io import StringIO
 package = globals().get("__package__", None)
 ischild = len(package)>0 if package is not None else False
 if ischild:
     from .molecularWeightListener import molecularWeightListener
 else:
     from molecularWeightListener import molecularWeightListener
-
 def serializedATN():
     with StringIO() as buf:
         buf.write(u"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3")

@@ -1,7 +1,7 @@
 import unittest
 
-from csv_reader import CSVReader
-from molecular_weight import MolecularWeight
+from molecular_weight.csv_reader import CSVReader
+from molecular_weight.molecular_weight import MolecularWeight
 
 
 class UnitTest(unittest.TestCase):
@@ -26,7 +26,7 @@ class UnitTest(unittest.TestCase):
         self.assertEqual(63.996, self.mw.process("O4"))
 
     def test_h2o(self):
-        self.assertEqual(18.01528, self.mw.process("H2O"))
+        self.assertEqual(18.015, self.mw.process("H2O"))
 
 if __name__ == '__main__':
     unittest.main()
